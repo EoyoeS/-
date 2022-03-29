@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Mar 29 20:11:24 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CP_100MHz" LOCATE = SITE "E3" LEVEL 1;
+COMP "oA" LOCATE = SITE "P2" LEVEL 1;
+COMP "oB" LOCATE = SITE "R2" LEVEL 1;
+COMP "oC" LOCATE = SITE "U1" LEVEL 1;
+COMP "D" LOCATE = SITE "R3" LEVEL 1;
+COMP "nCLR" LOCATE = SITE "P4" LEVEL 1;
+COMP "iA" LOCATE = SITE "T1" LEVEL 1;
+COMP "iB" LOCATE = SITE "T3" LEVEL 1;
+COMP "iC" LOCATE = SITE "U2" LEVEL 1;
+COMP "M" LOCATE = SITE "P3" LEVEL 1;
+SCHEMATIC END;
+

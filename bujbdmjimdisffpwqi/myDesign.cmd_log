@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/eoyoes/bujbdmjimdisffpwqi/myDesign.xst" -ofn "C:/Users/eoyoes/bujbdmjimdisffpwqi/myDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc myDesign.ucf -p xc7a100t-csg324-3 myDesign.ngc myDesign.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o myDesign_map.ncd myDesign.ngd myDesign.pcf 
+par -w -intstyle ise -ol high -mt off myDesign_map.ncd myDesign.ncd myDesign.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml myDesign.twx myDesign.ncd -o myDesign.twr myDesign.pcf -ucf myDesign.ucf 
+bitgen -intstyle ise -f myDesign.ut myDesign.ncd 
